@@ -1,15 +1,16 @@
 import vk
+from getpass import getpass
 
 
 APP_ID = -1
 
 
 def get_user_login():
-    return input('Введите логин: ')
+    return input('Login: ')
 
 
 def get_user_password():
-    return input('Введите пароль: ')
+    return getpass(prompt='Password: ')
 
 
 def get_online_friends(login, password):
